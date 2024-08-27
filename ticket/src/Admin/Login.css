@@ -1,0 +1,32 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.card-1 {
+    background: #433D8B;
+    width: 100%;
+    max-width: 380px;
+    padding: 29px 6px 72px 45px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 83%;
+}
+
+.input-text {
+    width: 80%;
+    padding: 3px;
+}

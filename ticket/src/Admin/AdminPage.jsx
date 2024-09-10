@@ -5,7 +5,7 @@ const AdminPage = () => {
     const [data, setData] = useState([]);
     const [error, setError] = useState('');
     const navigate = useNavigate();
-    const apiURL = "https://complaint-management-one.vercel.app";
+    const apiURL = "https://complaint-management-cmqf.vercel.app";
 
     useEffect(() => {
         const fetchComplaints = async () => {

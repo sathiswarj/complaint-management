@@ -13,7 +13,11 @@ const SECRET_KEY = 'secret123';
 const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin";
 
-app.use(cors());
+app.use(cors({
+  origin: [""],
+  methods: ["GET","POST","PUT"],
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost:27017/user')

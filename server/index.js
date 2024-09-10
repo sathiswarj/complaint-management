@@ -14,10 +14,10 @@ const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin";
 
 app.use(cors({
-    origin: "https://complaint-management-frontend.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"], 
+    Access-Control-Allow-Origin: https://complaint-management-frontend.vercel.app, 
     credentials: true, 
-    allowedHeaders: ['Content-Type', 'Authorization'],  
+    Access-Control-Allow-Methods: GET, POST, PUT
+    Access-Control-Allow-Headers: Content-Type, Authorization
 }));
 
 app.use(express.json());

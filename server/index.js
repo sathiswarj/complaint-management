@@ -14,7 +14,7 @@ const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin";
 
 app.use(cors({
-  origin: [""],
+  origin: ["https://complaint-management-frontend.vercel.app/"],
   methods: ["GET","POST","PUT"],
   credentials: true
 }));

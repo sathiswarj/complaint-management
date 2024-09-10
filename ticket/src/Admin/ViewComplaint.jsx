@@ -6,7 +6,7 @@ const ViewComplaint = () => {
     const [error, setError] = useState('');
     const [data, setData] = useState(null);
     const [category, setCategory] = useState('');
-    const apiURL = "http://localhost:8001";
+    const apiURL = "https://complaint-management-one.vercel.app";
     const navigate = useNavigate()
 
     useEffect(() => {

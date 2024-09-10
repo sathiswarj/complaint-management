@@ -8,7 +8,7 @@ const Register = () => {
   const [phoneno, setPhoneno] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const apiURL = "https://complaint-management-one.vercel.app";
+  const apiURL = "https://complaint-management-cmqf.vercel.app";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

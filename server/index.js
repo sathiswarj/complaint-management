@@ -20,6 +20,10 @@ mongoose.connect('mongodb://localhost:27017/user')
   .then(() => console.log('Database connected'))
   .catch((err) => console.log('Database connection failed', err));
 
+app.get('/', async(req,res) =>{
+     res.send("Hello")
+})
+
 app.post('/register', async (req, res) => {
   const { mail, name, phoneno, password } = req.body;
 

@@ -4,7 +4,7 @@ const Complaints = () => {
   const [complaints, setComplaints] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const apiURL = "https://complaint-management-one.vercel.app/";
+  const apiURL = "https://complaint-management-cmqf.vercel.app";
 
   useEffect(() => {
     const fetchComplaints = async () => {

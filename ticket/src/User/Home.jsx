@@ -8,7 +8,7 @@ const Home = () => {
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
 
-    const apiURL = "http://localhost:8001";
+    const apiURL = "https://complaint-management-cmqf.vercel.app";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,11 +16,11 @@ const Home = () => {
         const token = localStorage.getItem('token'); 
 
         try {
-            const response = await fetch(`${apiURL}/addcomplaint`, { // Fixed URL
+            const response = await fetch(`${apiURL}/addcomplaint`, {  
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}` // Fixed Authorization
+                    'Authorization': `Bearer ${token}` 
                 },
                 body: JSON.stringify({ name, email, subject, message })
             });

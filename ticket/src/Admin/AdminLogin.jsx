@@ -7,7 +7,7 @@ const AdminLogin = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
-  const apiURL = "https://complaint-management-one.vercel.app";
+  const apiURL = "https://complaint-management-cmqf.vercel.app";
 
   const handleLogin = async (e) => {
     e.preventDefault();

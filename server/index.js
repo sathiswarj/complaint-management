@@ -16,8 +16,8 @@ const ADMIN_PASSWORD = "admin";
 app.use(cors({
     Access-Control-Allow-Origin: "https://complaint-management-frontend.vercel.app", 
     credentials: true, 
-    Access-Control-Allow-Methods: GET, POST, PUT
-    Access-Control-Allow-Headers: Content-Type, Authorization
+    Access-Control-Allow-Methods: ["GET", "POST", "PUT"]
+    Access-Control-Allow-Headers: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());

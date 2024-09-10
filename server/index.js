@@ -14,10 +14,12 @@ const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin";
 
 app.use(cors({
-    origin: ["https://complaint-management-frontend.vercel.app"],
-    methods: ["GET","POST"],
-    credentials: true
-  }));
+    origin: "https://complaint-management-frontend.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"], 
+    credentials: true, 
+    allowedHeaders: ['Content-Type', 'Authorization'],  
+}));
+
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost:27017/user')
